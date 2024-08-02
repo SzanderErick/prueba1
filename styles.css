@@ -1,0 +1,110 @@
+body{
+    background-color:#672b41 ;
+    background-image: url(https://wallpapercave.com/wp/wp2092484.jpg);
+    /* añadimos una fuente para la pagina, y fuente separada con una coma es un resplado en caso de que no esta disponible la otra */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* añadimos padding para que el menu no se vea tan pegado a los bordes */
+    padding: 20px;
+}
+/* width se utiliza para definir el ancho de un elemento
+hacemos el ajuste para que div id=menu no ocupe toda la anchura de la pagina, sino solo 300 pixeles */
+.menu {
+    /* en esta linea el texto esta centrado dentro del elemento menu el ancho del menu se especifica en pixeles lo comentamos para hacer un cambio
+    width: 300px;*/
+    /* agregamos otra linea de width esta vez especificando el ancho en % y no en pixeles */
+    width: 80%;
+    /* agregamos un color para el menu */
+    background-color: #ffcd28;
+    /* ajustar margenes izquierdos y derechos */
+    margin-left: auto;
+    margin-right: auto;
+    /* ajustes de los bordes para el menu */
+    padding: 20px;
+    /* max-width para que el menu tenga un limite y no haga muy ancho y que los precios nos se vean tan alejados */
+    max-width: 500px;
+}
+/* usamos la class creada en el articulo para modificar lodos los p y que actuen como si se enconrarian en la misma linea */
+.item p {
+    display: inline-block;
+    /* no hay tanto espacio entre los saltos de linea de cada p */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+/* ajustamos el ancho de sabor/alitas y el precio a 75% y 25% ya que sabor ocupa mas y precio menos asi evitamos problemas ya que esta en la misma linea */
+.sabor, .alitas{
+    text-align: left;
+    width: 75%;
+}
+.precio{
+    text-align: right;
+    width: 25%;
+}
+/* alineamos el texto en h1, h2, p */
+h1,h2,p{
+    text-align: center;
+}
+h1,h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* cambiamos la tipografia solo para la class xtreme */
+.xtreme {
+    font-family:cursive;
+}
+/* cambiamos el tamaño solo de lso siguientes titulos */
+h1{
+    font-size: 40px;
+    /* se establece un margen por defecto en h1, que hace que le menu se vea desigual con el margen que esta abajo para esto borraremos el margen top y bottom de h1 */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 30px;
+}
+/* configuracion para la linea que divide el menu de la pagina */
+hr{
+    height: 2px;
+    background-color: red;
+    border-color: red;
+}
+/* ajustamos el espacio que hay entre la linea que divide el menu y las palabra que contiene el menu */
+.bottom-line{
+    margin-top: 25px;
+}
+/* FOOTER */
+footer{
+    font-size: 14px;
+}
+/* definimos el color black para que el enlace no se vea azul */
+a{
+    color: black;
+}
+/* definimos el color grey para que el enlace no se vea morado cuando se visita la pagina */
+a:visited {
+    color: grey;
+}
+/* definimos el color red para que el enlace se vea asi cuando el cursor pase sobre el */
+a:hover{
+    color: red;
+}
+/* definimos el color white para que el enlace se vea asi cuando se haga click en el */
+a:active{
+    color:white;
+}
+/* hacemos este ajuste para que los amrgenes que se colocan por defecto se disminuyan y el tamaño de los bordes sea proporcional tanto en la parte de arriba como abajo en el menu */
+.wifi{
+    margin-bottom: 5px;
+}
+/* configuracion para las imagenes agregadas en general */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Asegúrate de que la altura sea igual al ancho */
+    border-radius: 50%; /* Convierte la imagen en un círculo */
+    /* Aplica un filtro sepia suave */
+    /* filter: sepia(0.5); */
+    margin-top: -25px; /* Aplica un margen superior negativo para reducir el espacio vertical */
+}
+  

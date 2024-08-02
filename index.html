@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- unsamos link para enlazar index.html con la hoja de styles.css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- añadimos la siguiente linea para que la pagina se vea igual de dispositvos computadoras, mobiles y portatiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Spicy_burgers</title>
+</head>
+<body>
+    <!-- agregamos div con fines de diseño, se usa para agrupar y estrucutrar elementos dentro de la pagina
+     organiza estilos el contenido y aplico estilos o scripts a grupos de elementos -->
+<div class="menu">
+    <!-- agregar main no es necesario pero es una buena practica de programacion ya que tiene multiples beneficios -->
+    <main>
+        <h1>SPICY BURGERS</h1>
+        <p class="xtreme">XTREME HOT</p>
+        <!-- una linea que divide en secciones el menu -->
+        <hr class="bottom-line">
+        <section>
+            <h2>Hamburguesas</h2>
+            <!-- agregamos una imagen como logo de las hamburguesas -->
+            <img src="https://img.freepik.com/vector-gratis/queso-hamburguesa-ilustracion-icono-vector-dibujos-animados-fuego-alimentos-objeto-icono-concepto-aislado-premium_138676-5539.jpg?size=338&ext=jpg" alt="hamburguesalogo">
+            <!-- añadimos los articulos del menu con su precio y nombre, tambien una class para poder ordenarlos izq t der -->
+           <!-- agregamos una class item en articulo para poder ajusar en general lo que se encuentra aqui -->
+            <article class="item">
+                <p class="sabor">Hamburguesa Batman</p><p class="precio">$20.00</p>
+            </article>
+            <article class="item">
+                <p class="sabor">Hamburguesa Godzy</p><p class="precio">$20.00</p>
+            </article>
+            <article class="item">
+                <p class="sabor">Hamburguesa Lucy</p><p class="precio">$20.00</p>
+            </article>
+            <article class="item">
+                <p class="sabor">Hamburguesa Cachorrita</p><p class="precio">$35.00</p>
+            </article>
+            <article class="item">
+                <p class="sabor">Hamburguesa Cachorra</p><p class="precio">$35.00</p>
+            </article>
+        </section>
+        <section>
+            <h2>Alitas</h2>
+            <!-- logo para las alitas -->
+            <img src="https://img.freepik.com/vector-premium/alitas-pollo-al-fuego-elemento-diseno-carteles-emblemas-letreros-volantes-ilustracion-vectorial_124137-2874.jpg" alt="alitaslogo">
+            <article class="item">
+                <p class="alitas">Alitas Junior</p><p class="precio">$20.00</p>
+            </article>
+            <article class="item">
+                <p class="alitas">Alitas Botsito</p><p class="precio">$20.00</p>
+            </article>
+            <article class="item">
+                <p class="alitas">Alitas Cachorro</p><p class="precio">$40.00</p>
+            </article>
+            <article class="item">
+                <p class="alitas">Alitas Garfield</p><p class="precio">$40.00</p>
+            </article>
+        </section>
+    </main>
+    <hr class="bottom-line">
+    <footer>
+        <p>
+            <a href="https://httpbin.org/post" target="_blank">Visita nuestra pagina</a>
+        </p>
+        <p class="wifi">
+            Wifi Gratis
+        </p>
+    </footer>
+</div>
+</body>
+</html>
